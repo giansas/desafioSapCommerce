@@ -1,0 +1,25 @@
+Para testar a aplicação, seguir estes passos:
+
+1) Executar o arquivo: application.properties
+2) Utilizar uma ferramenta para enviar requisições HTTP (no meu caso, utilizo o POSTMAN)
+3) Enviar requisiões para estes caminhos:
+http://localhost:8080/alunos
+http://localhost:8080/cursos
+
+4) Utilizar primeiro método POST, em seguida, utilizar o método GET.
+
+Exemplos de dados para testes:
+
+POST http://localhost:8080/cursos
+{
+  "nome": "Java avançado",
+  "descricao": "Curso introdutório de Java",
+  "dataCriacao": "2024-11-18"
+}
+-------------------------------------------------------
+POST http://localhost:8080/alunos
+{
+  "nome": "João da Silva",
+  "email": "joao@email.com",
+  "dataCadastro": "2024-11-18"
+}
